@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    background: #f5f0fb;
+    color: #181818;
+    padding: 0 2rem;
+}
+
+.notifications-title {
+    font-family: 'Merriweather', serif;
+    font-size: 1.2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+.notification-msg-text {
+    display: none;
+    background: #10002b;
+    color: #fff;
+    padding: 0.2rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.close {
+    color: #fff;
+    font-size: 0.85rem;
+    margin-left: 0.5rem;
+}
+
+.btn-read-all {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 0.9rem;
+    background: #dee2ff;
+    color: #5a189a;
+    font-weight: 500;
+    padding: 0.5rem 0.8rem;
+    border-radius: 20px;
+}
+
+.btn-read-all:hover {
+    background: #f5f0fb;
+    color: #181818;
+    transition: all 0.3s;
+}
+
+.card-container {
+    max-width: 470px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5rem auto;
+}
+
+.btn {
+    display: inline-block;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 1rem 2rem;
+    letter-spacing: 0.2px;
+    transition: all 0.3s;
+    font-weight: 500;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.btn-decline {
+    margin-right: 0.5rem;
+    color: #181818;
+    font-weight: 600;
+}
+
+.btn-accept {
+    background: #10002b;
+    color: #fff;
+}
+
+.btn:hover {
+    opacity: 0.7;
+}
+
+.card {
+    background: #fff;
+    padding-top: 2.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 10px;
+    margin-top: 1.8rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* cad header */
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+/* Notification Message and Buttons*/
+.btn-notification {
+    position: absolute;
+    top: -30px;
+    right: 0px;
+    font-size: 1.5rem;
+    background: #10002b;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-notification:hover {
+    background: #7b2cbf;
+}
+
+.notification-msg-text {
+    position: absolute;
+    top: -10px;
+    left: 0px;
+}
+
+.notification-msg {
+    position: relative;
+}
+
+/* Card Content */
+.card-content-notifications {
+    display: flex;
+    padding: 2rem 0;
+    margin: 0.1rem 0;
+    gap: 15px;
+    border-top: 2px solid #ccc;
+}
+
+.card-content-notifications img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.card-content-notifications .msg-info {
+    margin-top: 0.5rem;
+    color: #10002b;
+}
+
+.card-content-notifications .msg-info span {
+    font-weight: 800;
+}
+
+.card-content-notifications .time {
+    color: #757575;
+    margin: 0.9rem 0;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
